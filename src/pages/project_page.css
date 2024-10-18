@@ -1,0 +1,205 @@
+.project__page {
+    margin-top: 10rem;
+}
+
+.project_intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem solid;
+    margin: 8rem 10rem;
+}
+
+.project-header {
+    text-align: center;
+}
+
+.project_img_container {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    max-width: 1000px;
+}
+
+.project_img_container img {
+    width: 400px;
+}
+
+.project_overview {
+    border-left: 5px black solid;
+    padding-left: 2rem;
+}
+
+.project_overview p {
+    margin: 1rem 0rem;
+}
+
+.tools_icons {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    flex-wrap: wrap;    
+    margin: 2rem 0rem;                  
+}
+  
+.icon_item {
+    display: flex;
+    flex-direction: column;         
+    align-items: center;            
+    text-align: center;             
+}
+  
+.icon_item img {
+    width: 50px;                    
+    height: auto;                   
+}
+  
+.icon_item p {
+    margin-top: 10px;               
+    font-size: 14px;                           
+}
+
+.project_body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 5rem 10rem;
+}
+
+.project_card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content max-content;
+    background-color: white;
+    padding: 2rem;
+    justify-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project_card img {
+    width: 50px;                     
+    height: auto;             
+    margin-bottom: 1rem;             
+}
+
+.project_card h2 {
+    text-align: center;
+    margin: 3rem 0rem;
+}
+
+.project_card p {
+    line-height: 1.6;
+    justify-self: left;
+}
+
+.project_card article {
+    justify-self: left;
+    margin-top: 1rem;
+}
+
+.project_card ul {
+    padding-left: 2rem;
+}
+
+.project_card li {
+    margin: 1rem 0rem;
+    list-style-type: disc;
+}
+
+
+.project_card ul .project__button {
+    border-left: 1px black solid;
+    padding: 0.5rem;
+    margin: 0rem 0.5rem;
+}
+
+.project_card div a {
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 0.4rem;   
+}
+
+.project_card article div {
+    display: flex;
+}
+
+.project_card article div a {
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn_container {
+    display: flex;             
+    justify-content: center;
+}
+
+.btn_container a {
+    margin: 1rem;
+}
+
+.img2 {
+    margin-left: 1rem;
+    width: 200px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .project_intro {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        margin: 4rem 2rem; /* Adjust margin for smaller screens */
+    }
+
+    .project_body {
+        grid-template-columns: 1fr; /* Stack project cards */
+        margin: 2rem 2rem; /* Adjust margin */
+    }
+
+    .project_card {
+        padding: 1.5rem; /* Less padding on smaller screens */
+    }
+
+    .project_overview {
+        border: none;
+        padding: none;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tools_icons {
+        justify-content: center; /* Center the icons */
+        flex-direction: row; /* Align icons horizontally */
+    }
+
+    .icon_item {
+        margin-bottom: 1rem; /* Add space between icons */
+        margin-right: 2rem; /* Space between icons horizontally */
+    }
+
+    .project_overview {
+        border: none;
+        padding: none;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project_header h1 {
+        font-size: 1.5rem; /* Smaller header for very small screens */
+    }
+
+    .project_subtitle {
+        font-size: 1rem; /* Smaller subtitle */
+    }
+
+    .btn_container a {
+        padding: 8px 15px; /* Adjust button padding */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .project_overview {
+        border: none;
+        padding: none;
+        margin-top: 3rem;
+    }
+}
