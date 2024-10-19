@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
-import './header.css';
+import { useState, useEffect, useRef } from "react";
+import './navbar.css';
 import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail, HiX, HiOutlineMenu } from "react-icons/hi";
 import { GrGroup, GrCertificate } from "react-icons/gr";
-import { NavLink } from 'react-router-dom'; // Keep this import
+import { NavLink } from 'react-router-dom';
 
 // Define nav items with specific IDs for scrolling
 const navItems = [
@@ -16,7 +16,11 @@ const navItems = [
     { id: "certificates", icon: <GrCertificate className="nav__icon" />, label: "Certificates", className: "nav__item-8" },
 ];
 
-const Header = () => {
+const Navbar = () => {
+    const [toggle, setToggle] = useState(false);
+    const [activeNav, setActiveNav] = useState("#home");
+    const menuRef = useRef(null); // Create a ref for the menu
+
     useEffect(() => {
         const handleScroll = () => {
             const header = document.querySelector(".header");
@@ -28,8 +32,20 @@ const Header = () => {
         return () => window.removeEventListener("scroll", handleScroll); // Clean up the event listener
     }, []);
 
-    const [toggle, setToggle] = useState(false);
-    const [activeNav, setActiveNav] = useState("#home"); // Keep default activeNav for scrolling
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // Close the menu if the click is outside the menu and toggle is true
+            if (toggle && menuRef.current && !menuRef.current.contains(event.target)) {
+                setToggle(false);
+            }
+        };
+
+        // Attach event listener to the document
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [toggle]); // Re-run this effect whenever toggle changes
 
     const handleScrollToSection = (id) => {
         const section = document.getElementById(id);
@@ -44,16 +60,17 @@ const Header = () => {
         <header className="header">
             <nav className="nav container">
                 <NavLink to="/" className="nav__logo"> <strong>Montaser Mballo</strong></NavLink>
-                <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
+                <div className={toggle ? "nav__menu show-menu" : "nav__menu"} ref={menuRef}> {/* Attach ref here */}
                     <ul className="nav__list grid">
                         {navItems.map(item => (
                             <li className={item.className} key={item.id}>
-                                <a 
-                                    href={`#${item.id}`} 
-                                    onClick={() => handleScrollToSection(item.id)} 
-                                    className={`nav__link ${activeNav === item.id ? "active-link" : ""}`}>
+                                <NavLink
+                                    to={`#${item.id}`}
+                                    onClick={() => handleScrollToSection(item.id)}
+                                    className={`nav__link ${activeNav === item.id ? "active-link" : ""}`}
+                                >
                                     {item.icon} {item.label}
-                                </a>
+                                </NavLink>
                             </li>
                         ))}
                     </ul>
@@ -67,4 +84,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default Navbar;

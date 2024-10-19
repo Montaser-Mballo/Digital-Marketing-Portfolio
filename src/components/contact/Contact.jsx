@@ -6,10 +6,10 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
     const form = useRef();
-    
+
     const sendEmail = (e) => {
         e.preventDefault();
-    
+
         emailjs.sendForm('service_v80mhcs', 'template_pm6odrd', form.current, '3Ke3-jxFDEBeQQr5k')
             .then(() => {
                 e.target.reset();
@@ -18,7 +18,7 @@ const Contact = () => {
                 console.error('Error sending email:', error);
             });
     };
-  
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Let&apos;s Connect</h2>
@@ -27,16 +27,16 @@ const Contact = () => {
             <div className="contact__container container grid">
                 <div className="contact__content">
                     <h3 className="contact__title">Talk to me</h3>
-                    
+
                     <div className="contact__info">
                         <div className="contact__card">
                             <HiOutlineMail className="contact__card-icon" />
-                            
+
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">montaser.mballo@gmail.com</span>
-                            
-                            <a href="mailto:montaser.mballo@gmail.com" target='blank' className="contact__button">
-                                Write Me{" "} 
+
+                            <a href="mailto:montaser.mballo@gmail.com" target="_blank" rel="noopener noreferrer" className="contact__button">
+                                Write Me{" "}
                                 <HiOutlineArrowSmRight className="contact__button-icon" />
                             </a>
                         </div>
@@ -44,12 +44,12 @@ const Contact = () => {
                     <div className="contact__info">
                         <div className="contact__card">
                             <FaWhatsapp className="contact__card-icon" />
-                            
+
                             <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data"> 971-502716697 </span>
-                            
+
                             <a href="https://wa.me/971502716697" target='blank' className="contact__button">
-                                Write Me{" "} 
+                                Write Me{" "}
                                 <HiOutlineArrowSmRight className="contact__button-icon" />
                             </a>
                         </div>

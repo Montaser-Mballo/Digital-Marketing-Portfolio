@@ -62,6 +62,8 @@
     display: none;
 }
 
+
+
 /* BREAK POINTS */
 @media screen and (max-width: 768px) {
     .header {
@@ -154,5 +156,92 @@
     
     .nav__item-8 {
         display: block;
+    }
+}
+
+/* iPhone 12/13/14 Portrait (375px) */
+@media (max-width: 375px) {
+    .nav__list {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .nav__item {
+        margin: 10px 0; /* Adjust spacing */
+    }
+
+    .nav__logo {
+        font-size: 1.5rem; /* Adjust logo size */
+    }
+}
+
+/* iPhone 12/13/14 Landscape (812px) */
+@media (max-width: 812px) {
+    .nav__list {
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: space-between; /* Space items */
+    }
+
+    .nav__item {
+        margin: 0 10px; /* Adjust spacing */
+    }
+}
+
+/* Samsung Galaxy S21 Portrait (360px) */
+@media (max-width: 360px) {
+    .nav__logo {
+        font-size: 1.4rem; /* Smaller logo */
+    }
+
+    .nav__item {
+        font-size: 0.9rem; /* Smaller nav item font size */
+    }
+}
+
+/* Samsung Galaxy S21 Landscape (800px) */
+@media (max-width: 800px) {
+    .nav__toggle-icon {
+        font-size: 1.5rem; /* Adjust toggle icon size */
+    }
+
+    .nav__list {
+        flex-direction: row; /* Maintain horizontal layout */
+    }
+}
+
+/* iPad Mini (768px) */
+@media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .nav__item {
+        margin: 5px 0; /* Adjust spacing */
+    }
+}
+
+/* iPad Pro (1024px) */
+@media (max-width: 1024px) {
+    .nav__list {
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: center; /* Center items */
+    }
+
+    .nav__item {
+        margin: 0 15px; /* Adjust spacing */
+    }
+}
+
+/* General small devices (like other smartphones) */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px; /* Adjust header padding */
+    }
+
+    .nav__logo {
+        font-size: 1.2rem; /* Smaller logo size */
+    }
+
+    .nav__link {
+        font-size: 0.9rem; /* Smaller link font size */
     }
 }

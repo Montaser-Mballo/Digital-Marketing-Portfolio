@@ -123,6 +123,17 @@
     color: var(--title-color);
 }
 
+.home__data .button-container-grid {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center; /* Center buttons if needed */
+}
+
+.home__data .button {
+    flex: 1; /* Optional: allow buttons to grow evenly */
+    margin: 0 0.5rem; /* Space between buttons */
+}
+
 /* BREAKPOINTS */
 
 /* Tablets and smaller desktops */
@@ -198,7 +209,13 @@
     .home__subtitle {
         padding: 0%;
     }
+
 }
+
+/* @media screen and (max-width: 541px) {
+
+    
+} */
 
 /* Very small devices */
 @media screen and (max-width: 350px) {
@@ -206,7 +223,7 @@
         width: 180px;
         height: 180px;
     }
-
+    
     .home__hand {
         width: 22px;
         height: 22px;
@@ -215,6 +232,11 @@
     .home__title {
         white-space: normal;
     }
+
+    .home__data .button {
+        max-width: 150px; /* Limit max width of buttons */
+        margin: 0 0.5rem; /* Space between buttons */
+        font-size: 0.6rem;
+    }
+
 }
-
-
