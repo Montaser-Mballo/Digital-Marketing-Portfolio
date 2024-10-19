@@ -1,4 +1,5 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';  // Update this line
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -19,7 +20,7 @@ import Project_Page_4 from './pages/project_4/Project_Page_4';
 
 const App = () => {
   return (
-    <Router> {/* Use HashRouter here */}
+    <Router>
       <Routes>
         <Route
           path="/"
