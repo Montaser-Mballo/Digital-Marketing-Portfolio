@@ -60,6 +60,30 @@
    }
 }
 
+/* BREAKPOINT at 768px */
+@media screen and (max-width: 768px) {
+    .skills__container {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        row-gap: 2rem;
+        justify-content: center;
+    }
+
+    .skills__box {
+        column-gap: 1rem; /* Adjust gap between items */
+        justify-content: space-around;
+    }
+
+    .skills__content {
+        padding: 1.5rem 2rem; /* Reduce padding for smaller screens */
+    }
+
+    .skills__title {
+        font-size: 1.25rem; /* Adjust title font size */
+    }
+
+    
+}
+
 @media screen and (max-width: 576px) {
     .skills__container {
         grid-template-columns: 1fr;

@@ -131,27 +131,33 @@
 
 @media screen and (max-width: 768px) {
     .services__container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        padding: 0 1rem; /* Add padding */
     }
     
     .services__content {
-        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+        padding: 3.5rem 1rem; /* Adjust padding */
     }
 
     .services__icon {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Smaller icon size */
     }
-}
- 
-@media screen and (max-width: 576px) {
+
+    .services__button {
+        padding: 0.5rem; /* Reduced padding */
+        font-size: 0.8rem; /* Adjusted font size */
+    }
+    
     .services__modal-content {
-        padding: 4.5rem 1.5rem 2.5rem;
+        width: 90%; /* Responsive modal width */
+        max-width: none; /* Allow full width on small screens */
     }
 
     .services__modal-description {
-        padding: 0;
+        padding: 0 1rem; /* Adjust padding for smaller screens */
     }
 }
+
 
 @media screen and (max-width: 350px) {
    .services__container {

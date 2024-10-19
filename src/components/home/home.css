@@ -179,43 +179,84 @@
 }
 
 /* Mobile devices */
+/* Responsive Design for 768px screens */
 @media screen and (max-width: 768px) {
+    .home__container {
+        row-gap: 5rem; /* Reduce row gap */
+    }
+
     .home__content {
-        grid-template-columns: 1fr;
-        padding-top: 3.5rem;
-        text-align: center;
+        grid-template-columns: 1fr; /* Stack the content vertically */
+        column-gap: 0; /* Remove column gap */
+        padding-top: 4rem;
     }
 
     .home__img {
-        order: initial;
-        justify-self: center;
-        width: 200px;
-        height: 200px;
-        box-shadow: inset 0 0 0 6px rgb(225 225 225 / 30%);
-    }
-
-    .home__data {
-        grid-column: 1;
-    }
-
-    .home__scroll, .scroll__down {
-        display: none;
+        width: 220px; /* Adjust image size */
+        height: 220px;
+        grid-area: 1 / 1 / 1 / 1;
     }
 
     .home__title {
-        white-space: normal;
+        font-size: var(--h1-font-size); /* Reduce title size */
+        text-align: center;
+        margin-bottom: var(--mb-0-5);
     }
 
     .home__subtitle {
-        padding: 0%;
+        padding-left: 0; /* Remove padding */
+        text-align: center;
+        font-size: var(--h3-font-size); /* Adjust subtitle size */
+        margin-bottom: var(--mb-1);
+    }
+
+    .home__subtitle::before {
+        display: none; /* Hide the line before the subtitle */
+    }
+
+    .home__description {
+        max-width: 100%; /* Make description full width */
+        text-align: center; /* Center the description text */
+        margin: 0 auto var(--mb-2); /* Adjust margins */
+    }
+
+    .home__data .button-container-grid {
+        display: flex; /* Switch to flex for better button layout */
+        justify-content: center; /* Center buttons */
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Space between buttons */
+    }
+
+    .home__data .button {
+        margin: 0; /* Remove extra margins */
+        width: 100%; /* Make buttons full width */
+        text-align: center; /* Center text within buttons */
+    }
+
+    .home-cv-btn {
+        margin-left: 0; /* Adjust button positioning */
+        width: 100%;
+    }
+
+    .home__scroll {
+        display: none;
+    }
+
+    .home__social {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+        grid-row: 3 / 4;
+        margin-top: 2rem;
+    }
+
+    .home__data .button {
+        justify-content: center;
     }
 
 }
 
-/* @media screen and (max-width: 541px) {
 
-    
-} */
 
 /* Very small devices */
 @media screen and (max-width: 350px) {

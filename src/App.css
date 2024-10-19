@@ -104,14 +104,6 @@ img {
     height: auto;
 }
 
-.nowrap {
-    white-space: nowrap;
-}
-
-.overflow {
-    overflow: hidden; /* Hides overflow */
-}
-
 /* CSS CLASSES */
 .section {
     padding: 6rem 0 2rem;

@@ -9,7 +9,6 @@
 .project__item {
     color: var(--title-color);
     padding: 0.25rem 0.75rem;
-
     font-weight: var(--font-medium);
     border-radius: 0.5rem;
     text-transform: capitalize;
@@ -23,22 +22,25 @@
 }
 
 .project__container {
-    grid-template-columns: repeat(2, max-content);
+    display: grid; /* Ensure the container is a grid */
+    grid-template-columns: repeat(2, 1fr); /* Default to two columns */
     gap: 3rem;
     justify-content: center;
 }
 
+/* Adjust the project card styles */
 .project__card {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.25rem;
     border-radius: 1rem;
-    width: 20rem;
+    width: 100%; /* Make card take full width */
+    max-width: 20rem; /* Set a maximum width for cards */
 }
 
 .project__img {
-    width: 295px;
-    height: 250px;
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
 }
@@ -70,10 +72,9 @@
     transition: background-color 0.3s ease;
 }
 
-.project__button:hover .project__button-icon{
+.project__button:hover .project__button-icon {
     transform: translateX(0.25rem);
 }
-
 
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
@@ -96,17 +97,21 @@
 
 @media screen and (max-width: 768px) {
     .project__container {
-        grid-template-columns: max-content;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for screens below 768px */
+    }
+
+    .project__card {
+        width: 100%; /* Full width for cards */
     }
 }
 
 @media screen and (max-width: 576px) {
     .project__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* One column layout for small screens */
     }
 
     .project__img {
-        width: 100%;
+        width: 100%; /* Make images full width */
     }
 }
 
