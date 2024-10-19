@@ -1,5 +1,4 @@
-import './App.css'; 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';  // Update this line
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -20,10 +19,10 @@ import Project_Page_4 from './pages/project_4/Project_Page_4';
 
 const App = () => {
   return (
-    <Router>
+    <Router> {/* Use HashRouter here */}
       <Routes>
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
             <>
               <Navbar />
@@ -38,7 +37,7 @@ const App = () => {
               <Contact />
               <Footer />
             </>
-          } 
+          }
         />
         <Route path="/project/1" element={<Project_Page_1 />} />
         <Route path="/project/2" element={<Project_Page_2 />} />
@@ -46,7 +45,7 @@ const App = () => {
         <Route path="/project/4" element={<Project_Page_4 />} />
         <Route path="/project/5" element={<Project_Page_5 />} />
       </Routes>
-      
+
       <ScrollUp />
     </Router>
   );
