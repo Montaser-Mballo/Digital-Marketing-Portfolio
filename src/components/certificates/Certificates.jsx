@@ -68,7 +68,7 @@ const Certificates = () => {
 
     return (
         <section className="certificates section" id="certificates">
-            <h2 className="section__title">Certificates</h2>
+            <span className="section__title"><h3>Certificates</h3></span>
             <span className="section__subtitle">My Achievements</span>
 
             <div className="certificates__container container grid">

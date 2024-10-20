@@ -77,6 +77,8 @@ body {
     color: var(--text-color);
     margin: 0; /* Ensure no default margin */
     padding: 0;
+    
+    
 }
 
 h1, h2, h3 {
@@ -106,6 +108,7 @@ img {
     height: auto;
 }
 
+
 /* CSS CLASSES */
 .section {
     padding: 6rem 0 2rem;
@@ -115,7 +118,7 @@ img {
 .section__subtitle {
     display: block;
     font-size: var(--small-font-size);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .section__title, .section__subtitle {

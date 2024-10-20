@@ -19,9 +19,9 @@ const Project_Page_1 = () => {
   }, []);
   return (
     <div id="project__page">
-      <div>
-        <Navbar_V2 />
-      </div>
+
+      <Navbar_V2 />
+
 
 
       <div className="project-header">

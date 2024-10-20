@@ -19,7 +19,7 @@ const About = () => {
   }, [hash]);
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
+      <span className="section__title"><h3>About Me</h3></span>
       <span className="section__subtitle">A short introduction</span>
       <div className="about__container container grid">
         <div className="about__data">
