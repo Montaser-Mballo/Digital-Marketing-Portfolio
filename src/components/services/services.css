@@ -131,12 +131,14 @@
 
 @media screen and (max-width: 768px) {
     .services__container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        padding: 0 1rem; /* Add padding */
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        margin: 0;
     }
     
     .services__content {
-        padding: 3.5rem 1rem; /* Adjust padding */
+        padding: 1rem 1rem; /* Adjust padding */
+        width: 1fr;
     }
 
     .services__icon {
@@ -155,6 +157,10 @@
 
     .services__modal-description {
         padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .services__button {
+        white-space: nowrap;
     }
 }
 

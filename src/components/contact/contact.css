@@ -118,6 +118,7 @@
     .contact__container {
         grid-template-columns: 1fr;
         row-gap: 3rem;
+        justify-content: center;
     }
 
     .contact__info {
@@ -125,8 +126,23 @@
     }
 
     .contact__form {
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        width: 1fr;
+        justify-content: center;
     }
+
+
+    .contact__form .button {
+        width: fit-content;
+        justify-self: center;
+    }
+
+    .contact__content {
+        justify-self: center;
+    }
+
 
 }
 

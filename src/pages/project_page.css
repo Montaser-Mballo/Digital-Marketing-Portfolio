@@ -37,6 +37,7 @@
 .tools_icons {
     display: flex;
     justify-content: space-between; 
+    gap: 1rem;
     align-items: center;            
     flex-wrap: wrap;    
     margin: 2rem 0rem;                  
@@ -74,6 +75,7 @@
     padding: 2rem;
     justify-items: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 .project_card img {
@@ -84,7 +86,7 @@
 
 .project_card h2 {
     text-align: center;
-    margin: 3rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .project_card p {
@@ -143,44 +145,104 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
     .project_intro {
-        grid-template-columns: 1fr; /* Stack columns on smaller screens */
-        margin: 4rem 2rem; /* Adjust margin for smaller screens */
+        grid-template-columns: 0.5fr 1fr;
+        gap: 3rem;
+        margin: 4rem 2rem;
+    }
+
+    .project_img_container {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        max-width: 500px;
+    }
+    
+    .project_img_container img {
+        width: 300px;
     }
 
     .project_body {
-        grid-template-columns: 1fr; /* Stack project cards */
-        margin: 2rem 2rem; /* Adjust margin */
+        grid-template-columns: 1fr 1fr; 
+        margin: 2rem 2rem; 
+    }
+
+    
+}
+
+@media (max-width: 850px) {
+    
+    .project_intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project_img_container {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+    }
+    
+    .project_img_container img {
+        max-width: 250px;
+    }
+
+    .project_body {
+        grid-template-columns: 1fr 1fr; 
+        margin: 2rem 2rem; 
+    }
+
+    .project_overview {
+        padding: 0;
+        border: none;
+        margin: 3rem;
+        width: 1fr;
+    }
+    
+    .icon_item img {
+        width: 30px;                    
+        height: auto;                   
+    }
+      
+    .icon_item p {
+        margin-top: 10px;               
+        font-size: 0.6rem;                           
+    }
+
+    .project_body {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 3rem 3rem;
     }
 
     .project_card {
-        padding: 1.5rem; /* Less padding on smaller screens */
-    }
-
-    .project_overview {
-        border: none;
-        padding: none;
-        margin-top: 3rem;
+        width: 1fr;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 560px) {
+
+    .icon_item img {
+        width: 20px;                    
+        height: auto;                   
+    }
+      
+    .icon_item p {
+        margin-top: 10px;               
+        font-size: 0.5rem;                           
+    }
+
     .tools_icons {
-        justify-content: center; /* Center the icons */
-        flex-direction: row; /* Align icons horizontally */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .icon_item {
-        margin-bottom: 1rem; /* Add space between icons */
-        margin-right: 2rem; /* Space between icons horizontally */
-    }
+    
 
-    .project_overview {
-        border: none;
-        padding: none;
-        margin-top: 3rem;
-    }
 }
 
 @media (max-width: 480px) {

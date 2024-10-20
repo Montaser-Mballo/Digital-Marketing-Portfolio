@@ -89,4 +89,8 @@
         font-size: 0.75rem; /* Smaller copyright text */
     }
 
+    .footer {
+        width: 1fr;
+    }
+
 }

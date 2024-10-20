@@ -8,7 +8,7 @@ export const projectsData = [
     {
         id: 1,
         image: Project1,
-        title: "SEO for an education platform",
+        title: "SEO",
         category: "SEO",
         link: "/project/1",
     },
@@ -17,28 +17,28 @@ export const projectsData = [
         image: Project4,
         title: "Competitor Analysis",
         category: "All",
-        link: "/project/2", 
+        link: "/project/2",
     },
     {
         id: 3,
         image: Project2,
         title: "Social media",
         category: "Content Creation",
-        link: "/project/3", 
+        link: "/project/3",
     },
     {
         id: 4,
         image: Project5,
         title: "Social media",
         category: "Content Creation",
-        link: "/project/4", 
+        link: "/project/4",
     },
     {
         id: 5,
         image: Project3,
         title: "City branding of Al Jubail",
         category: "Branding",
-        link: "/project/5", 
+        link: "/project/5",
     },
 ];
 

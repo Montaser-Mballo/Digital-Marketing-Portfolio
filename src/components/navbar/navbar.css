@@ -67,8 +67,8 @@
 /* BREAK POINTS */
 @media screen and (max-width: 768px) {
     .header {
-        top: initial;
-        bottom: 0;
+        top: 0;
+        bottom: initial;
     }
 
     .nav {
@@ -77,7 +77,7 @@
 
     .nav__menu {
         position: fixed;
-        bottom: -100%;
+        top: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -88,7 +88,7 @@
     }
 
     .show-menu {
-        bottom: 0;
+        top: 0;
     }
 
     .nav__list {
@@ -105,7 +105,7 @@
     .nav__close-icon {
         position: absolute;
         right: 1.3rem;
-        bottom: .5rem;
+        top: .5rem;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--title-color);

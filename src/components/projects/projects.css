@@ -23,8 +23,8 @@
 
 .project__container {
     display: grid; /* Ensure the container is a grid */
-    grid-template-columns: repeat(2, 1fr); /* Default to two columns */
-    gap: 3rem;
+    grid-template-columns: repeat(2, max-content); /* Default to two columns */
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -36,6 +36,7 @@
     border-radius: 1rem;
     width: 100%; /* Make card take full width */
     max-width: 20rem; /* Set a maximum width for cards */
+    justify-self: center;
 }
 
 .project__img {
@@ -88,6 +89,7 @@
 
     .project__img {
         margin-bottom: 0.75rem;
+        justify-self: center;
     }
 
     .project__title {
@@ -100,24 +102,46 @@
         grid-template-columns: repeat(2, 1fr); /* Two columns for screens below 768px */
     }
 
+    .project__item {
+        white-space: nowrap;
+    }
+
     .project__card {
-        width: 100%; /* Full width for cards */
+        width: 15rem; /* Full width for cards */
+        justify-self: center;
+    }
+
+    .project__button {
+        white-space: nowrap;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .project__container {
-        grid-template-columns: repeat(2, 1fr); /* One column layout for small screens */
-    }
 
-    .project__img {
-        width: 100%; /* Make images full width */
+    .project__card {
+        width: 13rem; /* Make images full width */
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 570px) {
+
+    .project__card {
+        width: 10rem; /* Make images full width */
+    }
+}
+
+@media screen and (max-width: 370px) {
+    
+    .project__container {
+        grid-template-columns: repeat(1, 1fr); /* Two columns for screens below 768px */
+    }
+
+    .project__card {
+        width: 15rem; /* Full width for cards */
+    }
+    
     .project__item {
-        font-size: var(--small-font-size);
+        font-size: 0.7rem;
     }
 
     .project__filters {

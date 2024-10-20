@@ -22,13 +22,13 @@ const Project_Page_1 = () => {
       <Navbar />
 
       <div className="project-header">
-        <h1>Course Curation</h1>
-        <p className="project-subtitle">SEO Optimization</p>
+        <h1>SEO</h1>
+        <p className="project-subtitle">Search Engine Optimization</p>
       </div>
 
       <div className="project_intro">
         <div className="project_img_container">
-          <img src={ProjectImg} alt="Course Curation Project" />
+          <img src={ProjectImg} alt="Habeebi Academy logo" />
         </div>
 
         <div className="project_overview">
