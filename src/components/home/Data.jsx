@@ -15,7 +15,7 @@ const Data = () => {
             </p>
 
             <div className="button-container-grid">
-                <div><Link to="/contact" className="button button--flex">
+                <div><Link to="/#contact" className="button button--flex">
                     Say Hello
                     <svg
                         className="button__icon"

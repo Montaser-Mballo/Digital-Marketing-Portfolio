@@ -2,8 +2,23 @@ import { useState } from 'react';
 import './services.css';
 import { HiOutlineClipboardList, HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from 'react-icons/hi';
 import Scroll from "./Scroll";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Services = () => {
+
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        // Scroll to the section when the component mounts or when the hash changes
+        if (hash) {
+            const section = document.getElementById(hash.substring(1)); // Remove the '#' character
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
     const [toggleState, setToggleState] = useState(0);
 
     const toggleTab = (index) => {
@@ -144,7 +159,7 @@ const Services = () => {
                 </div>
                 <Scroll />
             </div>
-            
+
         </section>
     );
 }

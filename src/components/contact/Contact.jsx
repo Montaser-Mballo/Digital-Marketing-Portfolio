@@ -3,8 +3,23 @@ import "./contact.css";
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi";
 import emailjs from '@emailjs/browser';
 import { FaWhatsapp } from "react-icons/fa";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Contact = () => {
+
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        // Scroll to the section when the component mounts or when the hash changes
+        if (hash) {
+            const section = document.getElementById(hash.substring(1)); // Remove the '#' character
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -20,7 +35,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact section" id="contact">
+        <section id="contact" className="contact section">
             <h2 className="section__title">Let&apos;s Connect</h2>
             <span className="section__subtitle">Contact Me</span>
 

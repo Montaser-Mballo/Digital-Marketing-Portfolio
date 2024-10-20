@@ -104,9 +104,10 @@
         grid-template-columns: initial;
     }
 
-    .qualification__button {
-        margin: 0 var(--mb-0-75);
+    .qualification__title, .qualification__subtitle, .qualification__calendar {
+        font-size: 0.6rem;
     }
+
 }
 
 @media screen and (max-width: 350px) {

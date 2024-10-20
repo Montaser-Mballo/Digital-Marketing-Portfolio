@@ -1,11 +1,17 @@
-.project__page {
+#project__page {
     margin-top: 10rem;
+    width: 100vw; /* Full width of the viewport */
+}
+
+body {
+    margin: 0; /* Ensure no default margin */
+    padding: 0;
 }
 
 .project_intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem solid;
+    gap: 5rem;
     margin: 8rem 10rem;
 }
 
@@ -22,7 +28,7 @@
 }
 
 .project_img_container img {
-    width: 400px;
+    width: 300px;
 }
 
 .project_overview {
@@ -75,7 +81,6 @@
     padding: 2rem;
     justify-items: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    width: 100%;
 }
 
 .project_card img {
@@ -189,18 +194,18 @@
     .project_img_container img {
         max-width: 250px;
     }
-
-    .project_body {
-        grid-template-columns: 1fr 1fr; 
-        margin: 2rem 2rem; 
-    }
-
     .project_overview {
         padding: 0;
         border: none;
         margin: 3rem;
         width: 1fr;
     }
+
+    .project_overview p, h2{
+        margin-right: -70px;
+        margin-left: -60px;
+    }
+    
     
     .icon_item img {
         width: 30px;                    
@@ -220,7 +225,10 @@
     }
 
     .project_card {
-        width: 1fr;
+        padding: 1rem;
+        margin-left: -30px;
+        margin-right: -30px;
+       
     }
 }
 

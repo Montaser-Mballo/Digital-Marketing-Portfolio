@@ -7,6 +7,8 @@ import exCerDoc from '../../assets/Experience Certificate.pdf';
 import goCerDoc from '../../assets/Google digital marketing & E-commerce.pdf';
 import baCerDoc from '../../assets/Basics of media certificate.pdf';
 import Scroll from "./Scroll";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const certificatesData = [
     {
@@ -14,7 +16,7 @@ const certificatesData = [
         image: exCerImg,
         title: 'Experience Certificate',
         // description: 'Description of Certificate 1',
-        viewLink: exCerDoc, 
+        viewLink: exCerDoc,
     },
     {
         id: 2,
@@ -34,6 +36,19 @@ const certificatesData = [
 ];
 
 const Certificates = () => {
+
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        // Scroll to the section when the component mounts or when the hash changes
+        if (hash) {
+            const section = document.getElementById(hash.substring(1)); // Remove the '#' character
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
     const [selectedCertificate, setSelectedCertificate] = useState(null);
 
     const openPreview = (certificate) => {

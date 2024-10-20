@@ -75,6 +75,8 @@ body, button, input, textarea {
 body {
     background-color: var(--body-color);
     color: var(--text-color);
+    margin: 0; /* Ensure no default margin */
+    padding: 0;
 }
 
 h1, h2, h3 {
