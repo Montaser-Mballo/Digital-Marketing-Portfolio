@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import './navbar_v2.css';
-import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail, HiX, HiOutlineMenu } from "react-icons/hi";
+import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlinePhotograph, HiOutlineMail, HiX, HiOutlineMenu } from "react-icons/hi";
+// import { HiOutlineClipboardList } from "react-icons/hi";
 import { GrGroup, GrCertificate } from "react-icons/gr";
 import { NavLink } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ const navItems = [
     { id: "home", icon: <HiOutlineHome className="nav__icon" />, label: "Home", className: "nav__item-1" },
     { id: "about", icon: <HiOutlineUser className="nav__icon" />, label: "About", className: "nav__item-2" },
     { id: "skills", icon: <HiOutlineBadgeCheck className="nav__icon" />, label: "Skills", className: "nav__item-3" },
-    { id: "services", icon: <HiOutlineClipboardList className="nav__icon" />, label: "Services", className: "nav__item-4" },
+    // { id: "services", icon: <HiOutlineClipboardList className="nav__icon" />, label: "Services", className: "nav__item-4" },
     { id: "portfolio", icon: <HiOutlinePhotograph className="nav__icon" />, label: "Projects", className: "nav__item-5" },
     { id: "contact", icon: <HiOutlineMail className="nav__icon" />, label: "Contact", className: "nav__item-6" },
     { id: "testimonials", icon: <GrGroup className="nav__icon" />, label: "Testimonials", className: "nav__item-7" },
