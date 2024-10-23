@@ -1,6 +1,6 @@
 import "../project_page.css";
 import { useEffect } from "react";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar_V2 from "../../components/navbarV2/Navbar_V2";
 import Footer from "../../components/footer/Footer";
 import ProjectImg from "../../assets/Habeebi Academy logo.jpg";
 import PersonIcon from "../../assets/person-icon.png";
@@ -13,8 +13,8 @@ const Project_Page_2 = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="project__page">
-      <Navbar />
+    <div id="project__page">
+      <Navbar_V2 />
 
       <div className="project-header">
         <h1>Competitor Analysis</h1>

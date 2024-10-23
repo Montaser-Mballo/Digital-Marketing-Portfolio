@@ -1,7 +1,7 @@
 import "../project_page.css";
 import { useEffect } from "react";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar_V2 from "../../components/navbarV2/Navbar_V2";
 import Footer from "../../components/footer/Footer";
 import ProjectImg2 from "../../assets/fresho-supermarket-logo.png";
 import Canva from "../../assets/canva icon.png";
@@ -18,8 +18,8 @@ const Project_Page_4 = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="project__page">
-      <Navbar />
+    <div id="project__page">
+      <Navbar_V2 />
 
       <div className="project-header">
         <h1>Social Media</h1>

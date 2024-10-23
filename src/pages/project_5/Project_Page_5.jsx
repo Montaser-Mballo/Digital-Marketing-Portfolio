@@ -1,7 +1,7 @@
 import "../project_page.css";
 import { useEffect } from "react";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar_V2 from "../../components/navbarV2/Navbar_V2";
 import Footer from "../../components/footer/Footer";
 import ProjectImg from "../../assets/al-jubail-city.jpg";
 import PersonIcon from "../../assets/person-icon.png";
@@ -14,8 +14,9 @@ const Project_Page_5 = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="project__page">
-      <Navbar />
+
+    <div id="project__page">
+      <Navbar_V2 />
 
       <div className="project-header">
         <h1>City Branding</h1>
@@ -105,7 +106,7 @@ const Project_Page_5 = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="project__button">
-                  Fresho Supermarket{" "}
+                  Jubail Project{" "}
                   <HiOutlineArrowSmRight className="project__button-icon" />
                 </a>
               </li>
