@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './services.css';
 import { HiOutlineClipboardList, HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from 'react-icons/hi';
-import Scroll from "./Scroll";
+// import Scroll from "./Scroll";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -157,7 +157,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <Scroll />
+                {/* <Scroll /> */}
             </div>
 
         </section>

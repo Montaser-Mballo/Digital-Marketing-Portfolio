@@ -5,7 +5,18 @@ import Footer from "../../components/footer/Footer";
 import ProjectImg from "../../assets/Habeebi Academy logo.jpg";
 import PersonIcon from "../../assets/person-icon.png";
 import AnalyticsIcon from "../../assets/analytic-icon.png";
-// import MediaIcon from "../../assets/media-icon.png";
+import SEMrush from "../../assets/semrush-Icon.png";
+import GoogleSheets from "../../assets/google-sheets-logo.png";
+import Statista from "../../assets/statista-icon.jpg";
+import GoogleAnalytics from "../../assets/google analytics logo.png";
+import Ahrefs from "../../assets/ahrefs-icon.jpg";
+import Project_Screenshots from './Project_Screenshots_2';
+
+
+
+
+
+
 
 const Project_Page_2 = () => {
   // Scroll to the top when the page loads
@@ -17,7 +28,7 @@ const Project_Page_2 = () => {
       <Navbar_V2 />
 
       <div className="project-header">
-        <h1>Competitor Analysis</h1>
+        <h1>Market Research</h1>
         <p className="project-subtitle">Competitor Analysis & Research</p>
       </div>
 
@@ -27,11 +38,17 @@ const Project_Page_2 = () => {
         </div>
 
         <div className="project_overview">
-          <h2>Description</h2>
+
+          <h2>Client Description</h2>
 
           <p>
-            Conducted a comprehensive competitor analysis and course research
-            for Habeebi Academy to gain insights into industry trends and
+            Habeebi Academy is an online education platform.
+          </p>
+
+          <h2>Project Description</h2>
+
+          <p>
+            Conducted a comprehensive competitor analysis and course research to gain insights into industry trends and
             identify opportunities for growth. The goal was to enhance the
             course offerings on the platform and strategically position the
             website in the competitive online education market.
@@ -40,15 +57,40 @@ const Project_Page_2 = () => {
           <h2>Key Skills Used</h2>
 
           <p>
-            Market research, data analysis, competitor analysis, strategic
-            planning.
+            Market research, data analysis, competitor analysis
           </p>
 
           <h2>Tools Used</h2>
 
           <p>
-            Google Sheets for data organization, SEMrush for competitor
-            analysis, and social media platforms for trend identification.
+
+            <div className="tools_icons">
+
+              <div className="icon_item">
+                <img src={GoogleSheets} alt="Google Sheets Icon" />
+                <p>Google Sheets</p>
+              </div>
+
+              <div className="icon_item">
+                <img src={SEMrush} alt="SEMrush Icon" />
+                <p>SEMrush</p>
+              </div>
+
+              <div className="icon_item">
+                <img src={Statista} alt="Statista Icon" />
+                <p>Statista</p>
+              </div>
+
+              <div className="icon_item">
+                <img src={GoogleAnalytics} alt="Google Analytics Icon" />
+                <p>Google Analytics</p>
+              </div>
+
+              <div className="icon_item">
+                <img src={Ahrefs} alt="Ahrefs Icon" />
+                <p>Ahrefs</p>
+              </div>
+            </div>
           </p>
         </div>
       </div>
@@ -70,7 +112,7 @@ const Project_Page_2 = () => {
                 education space, analyzing their course offerings, pricing
                 structures, marketing strategies, and audience engagement
                 tactics. Additionally, I researched trending courses by
-                examining industry reports, social media discussions, and
+                examining industry reports and
                 popular search queries to identify high-demand topics that could
                 attract more students.
               </li>
@@ -105,31 +147,12 @@ const Project_Page_2 = () => {
             </ul>
           </article>
         </div>
+      </div>
 
-        {/* <div className="project_card">
-          <img src={MediaIcon} alt="Media Icon" />
+      <div className="project_body">
 
-          <h2>Media</h2>
+        <Project_Screenshots />
 
-          <p>
-            <strong>Project Files:</strong>
-          </p>
-
-          <article>
-            <ul>
-              <li>
-                <a
-                  href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project__button">
-                  Fresho Supermarket{" "}
-                  <HiOutlineArrowSmRight className="project__button-icon" />
-                </a>
-              </li>
-            </ul>
-          </article>
-        </div> */}
       </div>
 
       <div className="btn_container">
@@ -138,7 +161,7 @@ const Project_Page_2 = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="button button--flex">
-          Visit Company Page
+          Visit Client&apos;s Webpage
         </a>
       </div>
       <Footer />

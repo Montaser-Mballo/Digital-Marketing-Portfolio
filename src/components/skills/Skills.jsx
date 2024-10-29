@@ -1,7 +1,7 @@
 import "./skills.css";
 import Skills_Container_1 from './Skills_Container_1';
 import Skills_Container_2 from './Skills_Container_2';
-import Scroll from "./Scroll";
+// import Scroll from "./Scroll";
 
 const Skills = () => {
   return (
@@ -11,7 +11,7 @@ const Skills = () => {
       <div className="skills__container container grid">
         <Skills_Container_1 />
         <Skills_Container_2 />
-        <Scroll />
+        {/* <Scroll /> */}
       </div>
 
     </section>

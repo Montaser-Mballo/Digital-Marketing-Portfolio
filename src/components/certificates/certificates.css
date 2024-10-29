@@ -19,12 +19,13 @@
 
 .certificate__image {
     width: 13rem;
+    max-height: 150px;
     border-radius: 0.5rem;
     transition: transform 0.3s;
 }
 
 .certificate__image:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .certificate__modal {
@@ -48,7 +49,8 @@
     background-color: white;
     padding: 2rem;
     border-radius: 0.5rem;
-    max-width: 600px;
+    max-width: 800px;
+    max-height: 800px;
     text-align: center;
 }
 
@@ -57,7 +59,7 @@
 }
 
 .certificate__modal-image {
-    width: 20rem;
+    width: 50rem;
     margin-bottom: 1rem;
 }
 
@@ -91,6 +93,11 @@
 
 
 /* Responsive styles */
+@media (max-width: 968px) {
+    .certificate__modal-image {
+        width: 30rem;
+    }
+}
 @media (max-width: 768px) {
     .certificates__container {
         grid-template-columns: repeat(2, 1fr);
@@ -101,10 +108,32 @@
     .certificates__container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .certificate__modal-image {
+        width: 25rem;
+    }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 523px) {
     .certificates__container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .certificate__modal-content {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 470px) {
+
+    .certificate__modal-content {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .certificate__modal-content {
+        width: 15rem;
     }
 }

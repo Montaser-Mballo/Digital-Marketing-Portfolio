@@ -1,16 +1,20 @@
 import "../project_page.css";
 import { useEffect } from "react";
-import { HiOutlineArrowSmRight } from "react-icons/hi";
+// import { HiOutlineArrowSmRight } from "react-icons/hi";
 import Navbar_V2 from "../../components/navbarV2/Navbar_V2";
 import Footer from "../../components/footer/Footer";
 import ProjectImg2 from "../../assets/fresho-supermarket-logo.png";
 import Canva from "../../assets/canva icon.png";
+import GoogleSheets from "../../assets/google-sheets-logo.png";
+import Instagram from "../../assets/instagram-logo.png";
+import YouTube from "../../assets/youtube-logo.png";
 import Hootsuite from "../../assets/hootsuite icon.png";
 import Slack from "../../assets/slack-icon.png";
 import GoogleAnalytics from "../../assets/google analytics logo.png";
 import PersonIcon from "../../assets/person-icon.png";
 import AnalyticsIcon from "../../assets/analytic-icon.png";
-import MediaIcon from "../../assets/media-icon.png";
+// import MediaIcon from "../../assets/media-icon.png";
+import Project_Screenshots from './Project_Screenshots_4';
 
 const Project_Page_4 = () => {
   // Scroll to the top when the page loads
@@ -38,7 +42,14 @@ const Project_Page_4 = () => {
         </div>
 
         <div className="project_overview">
-          <h2>Description</h2>
+
+          <h2>Client Description</h2>
+
+          <p>
+            Fresho Supermarket is a high-quality grocery shop situated in Jumeirah Village Circle (JVC) and Furjan Dubai, United Arab Emirates.
+          </p>
+
+          <h2>Project Description</h2>
 
           <p>
             Developed and executed comprehensive social media content strategies
@@ -53,12 +64,27 @@ const Project_Page_4 = () => {
             strategy, project management.
           </p>
 
-          <h2>Technologies Used</h2>
+          <h2>Tools Used</h2>
 
           <div className="tools_icons">
             <div className="icon_item">
               <img src={Canva} alt="Canva Icon" />
               <p>Canva</p>
+            </div>
+
+            <div className="icon_item">
+              <img src={GoogleSheets} alt="Google Sheets Icon" />
+              <p>Google Sheets</p>
+            </div>
+
+            <div className="icon_item">
+              <img src={Instagram} alt="Instagram Icon" />
+              <p>Instagram</p>
+            </div>
+
+            <div className="icon_item">
+              <img src={YouTube} alt="YouTube Icon" />
+              <p>YouTube</p>
             </div>
 
             <div className="icon_item">
@@ -80,6 +106,7 @@ const Project_Page_4 = () => {
       </div>
 
       <div className="project_body">
+
         <div className="project_card">
           <img src={PersonIcon} alt="Person Icon" />
 
@@ -125,115 +152,10 @@ const Project_Page_4 = () => {
           </article>
         </div>
 
-        <div className="project_card">
+        {/* <div className="project_card">
           <img src={MediaIcon} alt="Media Icon" />
 
           <h2>Media</h2>
-
-          {/* <p>
-            <strong>Some Posters I Made on Instagram:</strong>
-          </p>
-
-          <article>
-            <div>
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Post 1{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Post 2{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Post 3{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-            </div>
-          </article>
-
-          <p>
-            <strong>Some Videos I Made on Instagram:</strong>
-          </p>
-
-          <article>
-            <div>
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Video 1{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Video 2{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Video 3{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-            </div>
-          </article>
-
-          <p>
-            <strong>Some Videos I Made on YouTube:</strong>
-          </p>
-
-          <article>
-            <div>
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Video 1{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Video 2{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-
-              <a
-                href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button">
-                Video 3{" "}
-                <HiOutlineArrowSmRight className="project__button-icon" />
-              </a>
-            </div>
-          </article> */}
 
           <p>
             <strong>Project Files:</strong>
@@ -253,7 +175,13 @@ const Project_Page_4 = () => {
               </li>
             </ul>
           </article>
-        </div>
+        </div> */}
+      </div>
+
+      <div className="project_body">
+
+        <Project_Screenshots />
+
       </div>
 
       <div className="btn_container">
@@ -263,7 +191,7 @@ const Project_Page_4 = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="button button--flex">
-            Visit Company Page
+            Visit Client&apos;s Webpage
           </a>
         </div>
       </div>

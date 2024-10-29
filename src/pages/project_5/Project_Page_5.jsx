@@ -1,12 +1,12 @@
 import "../project_page.css";
 import { useEffect } from "react";
-import { HiOutlineArrowSmRight } from "react-icons/hi";
 import Navbar_V2 from "../../components/navbarV2/Navbar_V2";
 import Footer from "../../components/footer/Footer";
 import ProjectImg from "../../assets/al-jubail-city.jpg";
 import PersonIcon from "../../assets/person-icon.png";
 import AnalyticsIcon from "../../assets/analytic-icon.png";
-import MediaIcon from "../../assets/media-icon.png";
+import Project_Screenshots from './Project_Screenshots_5';
+
 
 const Project_Page_5 = () => {
   // Scroll to the top when the page loads
@@ -29,7 +29,14 @@ const Project_Page_5 = () => {
         </div>
 
         <div className="project_overview">
-          <h2>Description</h2>
+
+          <h2>Client Description</h2>
+
+          <p>
+            Al Jubail is a city in Saudi Arabia managed by the RCJY (Royal commission of Jubail and Yanbu).
+          </p>
+
+          <h2>Project Description</h2>
 
           <p>
             Collaborated with a team on a large-scale city branding project for
@@ -88,32 +95,26 @@ const Project_Page_5 = () => {
             </ul>
           </article>
         </div>
+      </div>
 
-        <div className="project_card">
-          <img src={MediaIcon} alt="Media Icon" />
+      <div className="project_body">
 
-          <h2>Media</h2>
+        <Project_Screenshots />
 
-          <p>
-            <strong>Project Files:</strong>
-          </p>
+      </div>
 
-          <article>
-            <ul>
-              <li>
-                <a
-                  href="https://drive.google.com/drive/folders/1hguI_FdW4P20xOQZYCOrDdRLE7Ec7sHS?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project__button">
-                  Jubail Project{" "}
-                  <HiOutlineArrowSmRight className="project__button-icon" />
-                </a>
-              </li>
-            </ul>
-          </article>
+      <div className="btn_container">
+        <div>
+          <a
+            href="https://www.my.gov.sa/wps/portal/snp/agencies/agencyDetails/AC072/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zivQIsTAwdDQz9LQwNzQwCnS0tXPwMvYwNDAz0g1Pz9L30o_ArAppiVOTr7JuuH1WQWJKhm5mXlq8f4ehsYG6kX5DtHg4ASW7uow!!/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button button--flex">
+            Visit Client&apos;s Webpage
+          </a>
         </div>
       </div>
+
       <Footer />
     </div>
   );

@@ -1,5 +1,5 @@
 import Project1 from "../../assets/Habeebi Academy logo.jpg";
-import Project2 from "../../assets/links-corporate-consultants.jpg";
+// import Project2 from "../../assets/links-corporate-consultants.jpg";
 import Project3 from "../../assets/al-jubail-city.jpg";
 import Project4 from "../../assets/Habeebi Academy logo.jpg";
 import Project5 from "../../assets/fresho-supermarket-logo.png";
@@ -19,13 +19,13 @@ export const projectsData = [
         category: "All",
         link: "/project/2",
     },
-    {
-        id: 3,
-        image: Project2,
-        title: "Social media",
-        category: "Content Creation",
-        link: "/project/3",
-    },
+    // {
+    //     id: 3,
+    //     image: Project2,
+    //     title: "Social media",
+    //     category: "Content Creation",
+    //     link: "/project/3",
+    // },
     {
         id: 4,
         image: Project5,

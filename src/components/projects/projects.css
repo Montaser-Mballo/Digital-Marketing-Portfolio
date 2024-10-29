@@ -42,6 +42,7 @@
 .project__img {
     width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
+    max-height: 250px;
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
 }

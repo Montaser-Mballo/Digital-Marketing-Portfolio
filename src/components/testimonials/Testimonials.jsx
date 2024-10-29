@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import Scroll from "./Scroll";
+// import Scroll from "./Scroll";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -56,7 +56,7 @@ const Testimonials = () => {
                     })}
                 </Swiper>
             </div>
-            <Scroll />
+            {/* <Scroll /> */}
         </section>
     );
 };

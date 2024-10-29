@@ -11,7 +11,6 @@ body {
 .project_intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
     margin: 8rem 10rem;
 }
 
@@ -170,7 +169,6 @@ body {
     }
 
     .project_body {
-        grid-template-columns: 1fr 1fr; 
         margin: 2rem 2rem; 
     }
 

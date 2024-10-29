@@ -6,7 +6,7 @@ import mediaCerImg from '../../assets/basics-of-media-certidicate-img.jpg';
 import exCerDoc from '../../assets/Experience Certificate.pdf';
 import goCerDoc from '../../assets/Google digital marketing & E-commerce.pdf';
 import baCerDoc from '../../assets/Basics of media certificate.pdf';
-import Scroll from "./Scroll";
+// import Scroll from "./Scroll";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -78,7 +78,7 @@ const Certificates = () => {
                         <h3 className="certificate__title">{certificate.title}</h3>
                     </div>
                 ))}
-                <Scroll />
+                {/* <Scroll /> */}
             </div>
 
             {selectedCertificate && (

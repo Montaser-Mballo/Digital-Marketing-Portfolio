@@ -11,6 +11,8 @@ import GoogleAnalytics from "../../assets/google analytics logo.png";
 import PersonIcon from "../../assets/person-icon.png";
 import AnalyticsIcon from "../../assets/analytic-icon.png";
 // import MediaIcon from "../../assets/media-icon.png";
+import Ahrefs from "../../assets/ahrefs-icon.jpg";
+
 
 const Project_Page_1 = () => {
   // Scroll to the top when the page loads
@@ -35,7 +37,14 @@ const Project_Page_1 = () => {
         </div>
 
         <div className="project_overview">
-          <h2>Description</h2>
+
+          <h2>Client Description</h2>
+
+          <p>
+            Habeebi Academy is an online education platform.
+          </p>
+
+          <h2>Project Description</h2>
 
           <p>
             This project involved the SEO optimization of Habeebi Academy, an
@@ -51,7 +60,7 @@ const Project_Page_1 = () => {
             SEO, backlinking strategy, keyword research, on-page optimization.
           </p>
 
-          <h2>Technologies Used</h2>
+          <h2>Tools Used</h2>
 
           <div className="tools_icons">
             <div className="icon_item">
@@ -67,6 +76,11 @@ const Project_Page_1 = () => {
             <div className="icon_item">
               <img src={Css} alt="CSS Icon" />
               <p>CSS</p>
+            </div>
+
+            <div className="icon_item">
+              <img src={Ahrefs} alt="Ahrefs Icon" />
+              <p>Ahrefs</p>
             </div>
 
             <div className="icon_item">
@@ -116,39 +130,20 @@ const Project_Page_1 = () => {
 
           <article>
             <ul>
-              <li>A 15% increase in organic traffic over two months.</li>
-
               <li>
-                Significant improvements in keyword rankings, with several
-                course-related keywords moving from the second page to the first
-                page of search results.
+                Reduced the website&apos;s bounce rate by 15%, indicating that users found the content more engaging and relevant after optimization efforts.
               </li>
 
               <li>
-                The acquisition of over 10 high-quality backlinks from
-                educational and industry-related websites.
+                Increased average session duration by 20%, reflecting enhanced user engagement with course materials and content.
+              </li>
+
+              <li>
+                Identified and optimized underperforming content, resulting in a 25% increase in views for previously low-traffic course pages.
               </li>
             </ul>
           </article>
         </div>
-
-        {/* <div className="project_card">
-          <img src={MediaIcon} alt="Media Icon" />
-
-          <h2>Media</h2>
-
-          <p>Visuals/Media:</p>
-
-          <article>
-            <ul>
-              <li>- showing organic traffic growth.</li>
-
-              <li>- illustrating keyword position improvements.</li>
-
-              <li>- displaying the increase in referring domains.</li>
-            </ul>
-          </article>
-        </div> */}
       </div>
 
       <div className="btn_container">
@@ -157,7 +152,7 @@ const Project_Page_1 = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="button button--flex">
-          Visit Company Page
+          Visit Client&apos;s Webpage
         </a>
       </div>
       <Footer />
