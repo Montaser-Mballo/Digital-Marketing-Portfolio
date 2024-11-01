@@ -5,6 +5,10 @@
     padding-bottom: 3rem;
 }
 
+.contact__content {
+    justify-self: center;
+}
+
 .contact__title {
     text-align: center;
     font-size: var(--h3-font-size);
@@ -15,8 +19,9 @@
 .contact__info {
     display: grid;
     row-gap: 1rem;
-    grid-template-columns: 300px;
+    grid-template-columns: 1fr;
     margin: 1rem;
+    justify-content: center;
 }
 
 .contact__card {
@@ -43,6 +48,7 @@
 
 .contact__card-data {
     display: block;
+    margin-top: var(--mb-0-75);
     margin-bottom: var(--mb-0-75);
 }
 
@@ -116,45 +122,71 @@
 
 @media screen and (max-width: 768px) {
     .contact__container {
-        grid-template-columns: 1fr;
-        row-gap: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 0.5rem;
         justify-content: center;
+        margin: 0rem 1rem;
     }
 
-    .contact__info {
-        justify-content: center;
+    .contact__card-data {
+        font-size: 0.6rem;
     }
 
     .contact__form {
-        display: grid;
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        width: 1fr;
         justify-content: center;
     }
 
+    .contact__form .button {
+        width: fit-content;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 0.5rem;
+        justify-content: center;
+        margin: 0rem 1rem;
+    }
+
+    .contact__form {
+        width: 200px;
+        justify-content: center;
+    }
+
+    .contact__form .button {
+        width: fit-content;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 0.5rem;
+        justify-content: center;
+        margin: 0rem 1rem;
+    }
+
+    .contact__form {
+        width: 150px;
+        justify-content: center;
+    }
 
     .contact__form .button {
         width: fit-content;
         justify-self: center;
     }
 
-    .contact__content {
-        justify-self: center;
-    }
-
-
-}
-
-@media screen and (max-width: 576px) {
     .contact__info {
-        grid-template-columns: 1fr;
+        grid-template-columns: 120px;
     }
 
-    .contact__form {
-        width: 100%;
+    .contact__card-data {
+        font-size: 0.4rem;
     }
-}
-
-@media screen and (max-width: 350px) {
 }

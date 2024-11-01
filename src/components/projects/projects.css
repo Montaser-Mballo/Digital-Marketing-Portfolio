@@ -32,11 +32,12 @@
 .project__card {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1.25rem;
+    padding: 0;
     border-radius: 1rem;
     width: 100%; /* Make card take full width */
     max-width: 20rem; /* Set a maximum width for cards */
     justify-self: center;
+    padding: 1rem;
 }
 
 .project__img {
@@ -121,6 +122,7 @@
 
     .project__card {
         width: 13rem; /* Make images full width */
+        padding: 0.6rem;
     }
 }
 
@@ -138,7 +140,8 @@
     }
 
     .project__card {
-        width: 15rem; /* Full width for cards */
+        width: 15rem;
+        padding: 0.9rem;
     }
     
     .project__item {

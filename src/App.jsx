@@ -4,7 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
-// import Services from './components/services/Services';
+import Services from './components/services/Services';
 import Portfolio from './components/projects/Portfolio';
 import Qualification from './components/qualification/Qualification';
 import Certificates from './components/certificates/Certificates';
@@ -30,7 +30,7 @@ const App = () => {
               <Home />
               <About />
               <Skills />
-              {/* <Services /> */}
+              <Services />
               <Portfolio />
               <Qualification />
               <Certificates />

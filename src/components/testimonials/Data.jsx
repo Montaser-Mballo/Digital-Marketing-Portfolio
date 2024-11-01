@@ -7,7 +7,7 @@ export const Data = [
         id: 1,
         image: Image1,
         title: "Jenny Fernandez, Academic Counsellor - GCC at Habeebi Academy",
-        description: "During this intensive internship, Montaser gained hands-on experience in handling live social media accounts for multiple domains. He demonstrated exceptional creativity and the ability to adapt his approach to diverse industries, seamlessly managing the social media presence for three different companies.",
+        description: "Montaser gained hands-on experience in handling live social media accounts for multiple domains. He demonstrated exceptional creativity and the ability to adapt his approach to diverse industries, seamlessly managing the social media presence for three different companies.",
     },
     {
         id: 2,
