@@ -7,7 +7,11 @@ import {
     HiX,
 } from "react-icons/hi";
 import "./services.css";
-import SeoBackgroundImg from "../../assets/work1.jpg";
+import SeoBackgroundImg from "../../assets/SEO-bg-img.jpg";
+import ContentCreationBackgroundImg from "../../assets/content-writing-bg-img.jpg";
+import EmailMarketingBackgroundImg from "../../assets/email-marketing-bg-img.jpg";
+import GoogleAdsBackgroundImg from "../../assets/google-ads-bg-img.png";
+
 
 const Services = () => {
     const { hash } = useLocation();
@@ -166,7 +170,7 @@ const Services = () => {
                 <div className="services__content">
                     <img
                         className="services__content-img"
-                        src={SeoBackgroundImg}
+                        src={ContentCreationBackgroundImg}
                         alt="SEO Icon"
                     />
                     <div className="services__content-block">
@@ -265,7 +269,7 @@ const Services = () => {
                 <div className="services__content">
                     <img
                         className="services__content-img"
-                        src={SeoBackgroundImg}
+                        src={EmailMarketingBackgroundImg}
                         alt="SEO Icon"
                     />
                     <div className="services__content-block">
@@ -379,7 +383,7 @@ const Services = () => {
                 <div className="services__content">
                     <img
                         className="services__content-img"
-                        src={SeoBackgroundImg}
+                        src={GoogleAdsBackgroundImg}
                         alt="SEO Icon"
                     />
                     <div className="services__content-block">

@@ -105,6 +105,7 @@
 .services__content-img {
     width: 100%;
     max-width: 21rem;
+    max-height: 180px;
 }
 
 .services__modal-title {
