@@ -1,6 +1,5 @@
 import "../project_page.css";
 import { useEffect } from "react";
-import { ScrollRestoration } from 'react-router-dom';
 import Navbar_V2 from "../../components/navbarV2/Navbar_V2";
 import Footer from "../../components/footer/Footer";
 import ProjectImg from "../../assets/Habeebi Academy logo.jpg";
@@ -22,8 +21,6 @@ const Project_Page_1 = () => {
   }, []);
   return (
     <div id="project__page">
-
-      <ScrollRestoration />
 
       <Navbar_V2 />
 
