@@ -113,6 +113,7 @@ img {
 .section {
     padding: 6rem 0 2rem;
     margin: 4rem 1rem;
+    scroll-margin-top: 80px;
 }
 
 .section__subtitle {

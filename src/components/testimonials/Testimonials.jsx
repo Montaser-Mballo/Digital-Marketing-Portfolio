@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-// import Scroll from "./Scroll";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -30,18 +29,18 @@ const Testimonials = () => {
                     className="testimonial__container"
                     loop={true}
                     grabCursor={true}
-                    spaceBetween={50} // Try reducing this value
+                    spaceBetween={50} // Adjust space as needed
                     pagination={{
                         clickable: true,
                     }}
                     breakpoints={{
                         576: {
                             slidesPerView: 2,
-                            spaceBetween: 25, // Reduce space here
+                            spaceBetween: 25,
                         },
                         768: {
                             slidesPerView: 2,
-                            spaceBetween: 25, // Reduce space here
+                            spaceBetween: 25,
                         },
                     }}
                     modules={[Pagination]}>
@@ -56,7 +55,6 @@ const Testimonials = () => {
                     })}
                 </Swiper>
             </div>
-            {/* <Scroll /> */}
         </section>
     );
 };

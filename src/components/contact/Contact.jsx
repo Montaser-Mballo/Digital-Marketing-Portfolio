@@ -1,26 +1,31 @@
-import { useRef } from 'react';
-import "./contact.css";
+import { useRef, useEffect } from 'react';
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi";
 import emailjs from '@emailjs/browser';
 import { FaWhatsapp } from "react-icons/fa";
-import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import "./contact.css";
 
 const Contact = () => {
-
     const { hash } = useLocation();
+    const form = useRef();
 
     useEffect(() => {
-        // Scroll to the section when the component mounts or when the hash changes
-        if (hash) {
-            const section = document.getElementById(hash.substring(1)); // Remove the '#' character
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
+        const scrollToSection = () => {
+            if (hash) {
+                const section = document.getElementById(hash.substring(1)); // Remove the '#' character
+                if (section) {
+                    setTimeout(() => {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }, 300); // Adjust this delay as needed
+                }
             }
-        }
-    }, [hash]);
+        };
 
-    const form = useRef();
+        scrollToSection(); // Scroll on component mount
+        window.addEventListener("hashchange", scrollToSection); // Listen for hash changes
+
+        return () => window.removeEventListener("hashchange", scrollToSection); // Clean up
+    }, [hash]);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -38,62 +43,49 @@ const Contact = () => {
         <section id="contact" className="contact section">
             <span className="section__title"><h3>Contacts</h3></span>
             <span className="section__subtitle">Contact Me</span>
-
             <div className="contact__container container grid">
                 <div className="contact__content">
                     <h3 className="contact__title">Talk to me</h3>
-
                     <div className="contact__info">
                         <div className="contact__card">
                             <HiOutlineMail className="contact__card-icon" />
-
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">montaser.mballo@gmail.com</span>
-
                             <a href="mailto:montaser.mballo@gmail.com" target="_blank" rel="noopener noreferrer" className="contact__button">
-                                Write Me{" "}
-                                <HiOutlineArrowSmRight className="contact__button-icon" />
+                                Write Me <HiOutlineArrowSmRight className="contact__button-icon" />
                             </a>
                         </div>
                     </div>
                     <div className="contact__info">
                         <div className="contact__card">
                             <FaWhatsapp className="contact__card-icon" />
-
                             <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data"> 971-502716697 </span>
-
                             <a href="https://wa.me/971502716697" target='blank' className="contact__button">
-                                Write Me{" "}
-                                <HiOutlineArrowSmRight className="contact__button-icon" />
+                                Write Me <HiOutlineArrowSmRight className="contact__button-icon" />
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div className="contact__content">
                     <h3 className="contact__title">Send a Message</h3>
-
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input type="text" name="name" className="contact__form-input" placeholder="Your name" required />
                         </div>
-
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Email</label>
                             <input type="email" name="email" className="contact__form-input" placeholder="Your email" required />
                         </div>
-
                         <div className="contact__form-div contact__form-area">
                             <label className="contact__form-tag">Message</label>
                             <textarea name="project" cols="30" rows="10" className="contact__form-input" placeholder="Message" required></textarea>
                         </div>
-
                         <button type="submit" className="button button--flex">
                             Send Message
                             <svg
-                                className="button__icon" // Changed to className
+                                className="button__icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"

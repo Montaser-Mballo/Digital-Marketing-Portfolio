@@ -1,11 +1,6 @@
 #project__page {
-    margin-top: 10rem;
+    margin-top: 0;
     width: 100vw; /* Full width of the viewport */
-}
-
-body {
-    margin: 0; /* Ensure no default margin */
-    padding: 0;
 }
 
 .project_intro {
