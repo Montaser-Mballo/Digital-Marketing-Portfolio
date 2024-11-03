@@ -191,7 +191,7 @@ const Services = () => {
                                     onClick={() => toggleTab(null)}
                                     className="services__modal-close"
                                 />
-                                <h3 className="services__modal-title">Search Engine Optimization</h3>
+                                <h3 className="services__modal-title">Content Creation</h3>
                                 <p className="services__modal-description">
                                     Create meaningful connections with your audience through well-crafted, strategic content that informs, engages, and converts.
                                 </p>
