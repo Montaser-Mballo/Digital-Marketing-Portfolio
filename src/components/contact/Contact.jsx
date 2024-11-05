@@ -52,7 +52,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">montaser.mballo@gmail.com</span>
                             <a href="mailto:montaser.mballo@gmail.com" target="_blank" rel="noopener noreferrer" className="contact__button">
-                                Write Me <HiOutlineArrowSmRight className="contact__button-icon" />
+                                Message <HiOutlineArrowSmRight className="contact__button-icon" />
                             </a>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data"> 971-502716697 </span>
                             <a href="https://wa.me/971502716697" target='blank' className="contact__button">
-                                Write Me <HiOutlineArrowSmRight className="contact__button-icon" />
+                                Message <HiOutlineArrowSmRight className="contact__button-icon" />
                             </a>
                         </div>
                     </div>

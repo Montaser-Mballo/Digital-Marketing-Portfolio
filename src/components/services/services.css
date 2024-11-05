@@ -244,6 +244,12 @@
     }
 }
 
+@media screen and (max-width: 520px) {
+    .services__title {
+        font-size: 0.9rem;
+    }
+ }
+
 @media screen and (max-width: 450px) {
     .services__icon {
         display: none;
