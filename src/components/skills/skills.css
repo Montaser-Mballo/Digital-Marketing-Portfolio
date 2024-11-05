@@ -58,7 +58,7 @@
 
     .skills__content {
         padding: 1rem;
-        width: 27rem;
+        width: 25rem;
         justify-self: center;
     }
 
@@ -82,7 +82,7 @@
 
     .skills__content {
         padding: 0.8rem;
-        width: 20rem;
+        width: 19rem;
         justify-self: center;
     }
 
@@ -110,7 +110,7 @@
 
     .skills__content {
         padding: 0.8rem;
-        width: 17rem;
+        width: 16rem;
         justify-self: center;
     }
     
@@ -122,7 +122,7 @@
     }
 
     .skills__content {
-        width: 27rem;
+        width: 26rem;
     }
 
     .skills__name {
@@ -136,7 +136,7 @@
 
 @media screen and (max-width: 476px) {
     .skills__content {
-        width: 22rem;
+        width: 20rem;
     }
 }
 

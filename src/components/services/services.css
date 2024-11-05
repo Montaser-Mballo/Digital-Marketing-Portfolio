@@ -264,6 +264,10 @@
         padding: 0;
         margin: 0rem 0.6rem;
     }
+
+    .services__content {
+        width: 150px;
+    }
  }
 
 @media screen and (max-width: 400px) {
@@ -278,11 +282,16 @@
     .services__modal-content.active {
         padding: 1rem;
     }
+
+    .services__content {
+        width: 140px;
+    }
  }
 
 @media screen and (max-width: 360px) {
    .services__container {
-        grid-template-columns: max-content;
+    display: grid;
+        grid-template-columns: max-content max-content;
         margin: 0rem 0.4rem;
    }
 

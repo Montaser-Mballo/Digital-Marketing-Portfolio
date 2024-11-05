@@ -170,7 +170,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 459px) {
     .contact__container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -202,7 +202,7 @@
     }
 
     .contact__form-input {
-        padding: 0.6rem;
+        padding: 0.5rem;
     }
 }
 

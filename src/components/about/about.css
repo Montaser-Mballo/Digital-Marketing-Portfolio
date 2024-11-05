@@ -61,6 +61,7 @@
     margin-bottom: var(--mb-2-5);
     color: hsl(0, 0%, 23%);
     text-align: left;
+    margin-top: 3rem;
 }
 
 /* BREAK POINTS */

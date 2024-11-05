@@ -26,7 +26,7 @@ const About = () => {
           <Info />
           <p className="about__description">
 
-            I&apos;m Montaser Mballo, a digital marketer with a strong foundation in SEO, content creation, and email marketing. My journey began as a small business owner, where I developed hands-on marketing skills, and now, as a full fledged digital marketer, I deliver data-driven, engaging campaigns across diverse platforms. Let&apos;s connect and explore how my expertise can help your business grow!
+            I&apos;m Montaser Mballo, a digital marketer with a strong foundation in SEO, content creation, and email marketing. My journey began as a small business owner, where I developed hands-on marketing skills. And now, as a full fledged digital marketer, I deliver engaging campaigns across diverse platforms. Let&apos;s connect and explore how my expertise can help your business grow!
 
           </p>
           {/* <Scroll /> */}

@@ -3,6 +3,10 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 2rem; /* Reduce margin */
     padding: 1rem 0; /* Reduce padding */
+    position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%; /* Ensures it spans across */
 }
 
 .footer__container {
@@ -71,6 +75,11 @@
 
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
+
+    .footer {
+        width: 100%;
+    }
+
     .footer__social-link {
         padding: 0.25rem;
         border-radius: 0.25rem;
