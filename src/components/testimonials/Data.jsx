@@ -12,7 +12,7 @@ export const Data = [
     {
         id: 2,
         image: Image2,
-        title: "Jay Sreekumar CEO, Habeebi Global Group of Companies",
+        title: "Jay Sreekumar CEO, Habeebi Global",
         description: "Provided creative insight and improvment to the project.",
     },
     // {
